@@ -11,5 +11,7 @@ document.getElementById('calculateBtn').addEventListener('click', function(event
     const cgpa = 0.1 * graded + 0.2 * quiz1 + 0.3 * quiz2 + 0.4 * endterm;
 
     // Display result
-    document.querySelector('.result').textContent = `CGPA: ${cgpa.toFixed(2)}`;
+    let resultElement = document.querySelector('.result');
+    resultElement.textContent = `CGPA: ${cgpa.toFixed(2)}`;
+    resultElement.classList.add('resultTwo'); // Set text color to black (or your style)
 });
